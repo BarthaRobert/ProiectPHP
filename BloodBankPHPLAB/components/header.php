@@ -54,7 +54,7 @@
                         $name = $_SESSION['login_user'];
                         $encode = base64_encode($name);
                         echo "<li><a href=\"profile.php?id=$encode\"> Bun venit, $name </a></li>";
-                        echo "<li><a href=\"classes/logout.php\">Deconectare</a></li>";
+                        echo "<li><a href=\"src/logout.php\">Deconectare</a></li>";
                     }
                     else {
                         $str = "<li>
