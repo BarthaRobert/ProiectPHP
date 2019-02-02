@@ -19,7 +19,7 @@
 <nav class="navbar navbar-inverse">
     <div class="container-fluid container">
         <div class="navbar-header">
-            <a class="navbar-brand" href="http://localhost/BloodBankPHPLAB/">
+            <a class="navbar-brand" href="/BloodBankPHPLAB">
                 <img src="images/logo.png" alt="icon" class="logo-icon"/>
                 Blood Bank
             </a>
