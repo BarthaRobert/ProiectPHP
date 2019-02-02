@@ -17,7 +17,7 @@
 </div>
 
 <div class="container">
-    <h1 class="heading-reg">Toate cererile</h1>
+    <h1 class="heading-reg">Cereri</h1>
     
     <?php while($row = mysqli_fetch_array($result)) : ?>
         <div class="row">
