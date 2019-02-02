@@ -6,7 +6,7 @@
 </div>
 <div class="container">
     <h1 class="heading-reg">Autentificare</h1>
-        <form method="POST" action="classes/login.php">
+        <form method="POST" action="src/login.php">
             <div class="col-md-6 icon-col">
                 <img src="images/Users-icon.png" alt="User">
             </div>
@@ -44,7 +44,7 @@
           <h4 class="modal-title">Sign Up</h4>
         </div>
         <div class="modal-body">
-          <form method="POST" action="classes/register.php" onSubmit="return Validate()">
+          <form method="POST" action="src/register.php" onSubmit="return Validate()">
             <div class="input-group">
                 <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
                 <input id="email" name="username" type="email" class="form-control" placeholder="Email">

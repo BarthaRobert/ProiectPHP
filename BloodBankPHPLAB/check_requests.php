@@ -1,15 +1,15 @@
 <?php
     session_start();
     if(!isset($_SESSION['login_user']))
-    header('Location: http://localhost/BloodBankPHPLAB/login.php');
+    header('Location: \BloodBankPHPLAB\login.php');
 
     include "components/header.php";
-    include "classes/dbconnect.php";
+    include "src/dbconnect.php";
 
     $sql = "SELECT * FROM request";
     $result = mysqli_query($con,$sql);
     if(! $result ) {
-        header('Location: http://localhost/BloodBankPHPLAB//error.php');
+        header('Location: \BloodBankPHPLAB\error.php');
     }
     
 ?>

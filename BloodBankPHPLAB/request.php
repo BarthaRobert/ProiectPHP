@@ -1,10 +1,10 @@
 <?php
     session_start();
     if(!isset($_SESSION['login_user']))
-        header('Location: http://localhost/BloodBankPHPLAB/login.php');
+        header('Location: \BloodBankPHPLAB\login.php');
 
     include "components/header.php";
-    include "classes/dbconnect.php";
+    include "src/dbconnect.php";
 
 ?>
 <div class="cover">
@@ -12,7 +12,7 @@
 
 <div class="container">
     <h1 class="heading-reg">Cerere sange</h1>
-    <form action="classes/request.php" method="post">
+    <form action="src/request.php" method="post">
         <div class="row form-row">
             <div class="col-md-6">
                 <label for="FirstName">Numele pacientului</label>

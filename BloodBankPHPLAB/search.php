@@ -1,10 +1,10 @@
 <?php
     session_start();
     if(!isset($_SESSION['login_user']))
-        header('Location: http://localhost/BloodBankPHPLAB//login.php');
+        header('Location: \BloodBankPHPLAB\login.php');
 
     include "components/header.php";
-    include "classes/dbconnect.php";    
+    include "src/dbconnect.php";
 
     if( isset($_POST['submit']) ) 
     {
@@ -34,7 +34,7 @@
 
         $result = mysqli_query($con,$sql);
         if( !$result ) {
-            header('Location: http://localhost/BloodBankPHPLAB/error.php');
+            header('Location: \BloodBankPHPLAB\error.php');
         }
     }
     else {
@@ -42,7 +42,7 @@
     
         $result = mysqli_query($con,$sql);
         if( !$result ) {
-            header('Location: http://localhost/BloodBankPHPLAB/error.php');
+            header('Location: \BloodBankPHPLAB\error.php');
         }
     }
     

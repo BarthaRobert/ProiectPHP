@@ -1,10 +1,10 @@
 <?php
     session_start();    
     if(!isset($_SESSION['login_user']))
-        header('Location: http://localhost/BloodBankPHPLAB/login.php');
+        header('Location: \BloodBankPHPLAB\login.php');
 
     include "components/header.php";
-    include "classes/dbconnect.php";
+    include "src/dbconnect.php";
 
     $encode = $_GET['id'];
     $username = base64_decode($encode);
@@ -19,7 +19,7 @@
 </div>
 <div class="container">
     <h1 class="heading-reg">Detaliile profilului</h1>
-    <form action="classes/update.php" method="post">
+    <form action="src/update.php" method="post">
         <div class="row form-row">
             <div class="col-md-6">
                 <label for="FirstName">Numele de familie</label>
