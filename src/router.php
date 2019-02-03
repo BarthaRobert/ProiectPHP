@@ -27,7 +27,6 @@ class Router
     {
         $controller = $routes[$url]['controller'];
         require_once '../app/Controllers/' . $controller . '.php';
-        require_once '../app/Controllers/LoginController.php';
         $controllerObject = new $controller;
         $action = $routes[$url]["action"];
         $controllerObject->{$action}();
