@@ -2,7 +2,7 @@
 namespace Framework;
 class Router
 {
-    public function match($url, $routes)
+    public function getResource($url, $routes)
     {
         if (isset($routes[$url])) {
             $this->initialize($url, $routes);
@@ -25,8 +25,9 @@ class Router
 
     public function initialize($url, $routes)
     {
-        $controller = $routes[$url]["controller"];
-        require_once "../app/Controllers/" . $controller . ".php";
+        $controller = $routes[$url]['controller'];
+        require_once '../app/Controllers/' . $controller . '.php';
+        require_once '../app/Controllers/LoginController.php';
         $controllerObject = new $controller;
         $action = $routes[$url]["action"];
         $controllerObject->{$action}();

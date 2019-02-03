@@ -1,6 +1,0 @@
-<?php
-    session_start();
-    session_destroy();
-    //unset($_SESSION["login_user"]);
-    header('Location: http://localhost/BloodBankPHPLAB/');
-?>

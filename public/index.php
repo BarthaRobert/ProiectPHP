@@ -28,4 +28,4 @@ function dd($data) {
 
 
 $router = new Framework\Router($routes);
-$router->getResource($_SERVER['REQUEST_URI']);
+$router->getResource($_SERVER['REQUEST_URI'],$routes);
